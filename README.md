@@ -24,7 +24,7 @@ def get_service(api_name, api_version, scope, key_file_location, service_account
 
     return service
 
-
+# open a list of user link ids
 with open('delete_ids.csv', 'rt') as csvfile:
     reader = csv.reader(csvfile, dialect='excel')
     reader_list = list(reader)
