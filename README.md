@@ -13,13 +13,13 @@ import httplib2
 
 def get_service(api_name, api_version, scope, key_file_location, service_account_email):
 
-    Parse command-line arguments.
+    #Parse command-line arguments.
     credentials = ServiceAccountCredentials.from_p12_keyfile(
         service_account_email, key_file_location, scopes=scope)
 
     http = credentials.authorize(http=httplib2.Http())
 
-    Build the service object.
+    #Build the service object.
     service = build(api_name, api_version, http=http)
 
     return service
