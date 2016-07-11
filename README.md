@@ -1,5 +1,5 @@
 # How to delete a list of users from Google Analytics via the Google Management API
-A Python script that will delete a list of users from Google Analytics via the Google Management API. A typical use case for this would be for security purposes. More information can be found in the Google Management API documentation found [here](https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/management/accountUserLinks/delete)
+A Python script that will delete a list of users from Google Analytics via the Google Management API. A typical use case for this would be for security purposes when a list of user link ids are provided for deletion. More information can be found in the Google Management API documentation found [here](https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/management/accountUserLinks/delete). The necessary Google client libary can be installed with `pip install google-api-python-client`.
 
 
 
